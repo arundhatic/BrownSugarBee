@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #D4C5B4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #663044;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #663044;
+}
+
+.openbtn{
+ color: #D4C5B4;
+ padding-left: 15px;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* 1st section */
+.container-background{
+  background-color: #663044;
+  width:100%;
+  outline:2px solid #D4C5B4;
+  outline-offset: -15px;
+}
+
+.topic-holder{
+  padding-left: 105px;
+}
+
+.topic-sec1{
+  position: relative;
+  top: -70px; /* This will move it 70px up */
+  right:45px;
+  color: #239EB3;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  border-bottom:1px solid #D4C5B4;
+}
+
+.desc-sec1{
+  position: relative;
+  top: -40px; /* This will move it 40px up */
+  left:10px; /* This will move it 10px to the right */
+  color: #239EB3;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+
+
+}
+
+.button-sec1{
+  position: relative;
+  padding-top: 30px;
+  left: 170px;
+}
+
+.showmore {
+  border-color: #D4C5B4;
+  color: #D4C5B4;
+  text-align: center;
+  padding: 14px 35px;
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.showmore:hover {
+	opacity: 0.7;
+	background-color: #239EB3;
+  color: #663044;
+
+}
+
+/* 2nd section */
+.sec2-container-background_1, .sec2-container-background_2, .sec2-container-background_3{
+    background-color: #c8c4a7;
+    width:100%;
+}
+
+.sec2_svg_1, .sec2_svg_2, .sec2_svg_3{
+    opacity: 0.5;
+}
+
+.sec2_svg_1{
+  position: relative;
+}
+
+.sec2_heading_1{
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    color: #545470;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sec2_desc_1{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: #663044;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sec2-container-background_1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.sec2_image_1 {
+    position: relative;
+    top: 50px;
+    left: 0;
+}
+.sec2_image_1_1 {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+
+.sec2-container-background_2 {
+     position: relative;
+     top: 0;
+     left: 0;
+ }
+.sec2_svg_2{
+    position: relative;
+}
+
+.sec2_heading_2{
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    color: #545470;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sec2_desc_2{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: #663044;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sec2_image_2 {
+    position: relative;
+    top: 50px;
+    left: 0;
+}
+.sec2_image_2_1 {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.sec2-container-background_3{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.sec2_svg_3{
+    position: relative;
+}
+
+.sec2_heading_3{
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    color: #545470;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.sec2_desc_3{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: #663044;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.sec2_image_3 {
+    position: relative;
+    top: 50px;
+    left: 0;
+    padding-bottom: 50px;
+}
+.sec2_image_3_1 {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+
+.sec2_heading_holder{
+    padding-top: 20px;
+}
+
+.sec2_heading{
+    color: #663044;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    border-bottom:2px solid #545470;
+
+}
