@@ -7,26 +7,29 @@
     <title>Bootstrap eCommerce Page Template</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
 
     <!-- 1st sectiion loading page -->
   <div id="main" class="container-fluid container-background">
     <div class="row">
-     <div class="col-lg-4 col-md-12 col-sm-12">
+     <div class="col-lg-4 col-md-12">
+
        <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Recipes</a>
-        <a href="#">Contact</a>
+        <a href="#about" name="">About</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#myStyle">My Cooking Style</a>
+        <a href="#recipe">Recipes</a>
+        <a href="#contact">Contact Me</a>
       </div>
       <span class = "openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-       <div class="img-wrapper">
+
+       <div class="img-wrapper text-center">
          <!-- start of sec 1 left svg code -->
-         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         <svg class ="sec1_left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 141.1 238.3" style="enable-background:new 0 0 141.1 238.3;" xml:space="preserve">
          <style type="text/css">
            .st0{fill:none;stroke:#D4C5B4;stroke-width:0.4659;stroke-miterlimit:10;}
@@ -103,27 +106,27 @@
         </div>
      </div>
      <div class="col-lg-4 col-md-12 col-sm-12">
-       <div class="img-wrapper">
-          <img class="img-fluid" src="images/logo.svg" alt="illustration_left">
+       <div class="img-wrapper text-center">
+          <img class="img-fluid logo_sec1" src="images/logo.svg" alt="illustration_left">
         </div>
-        <div class="topic-holder">
+        <div class="topic-holder text-center">
             <h2 class ="topic-sec1">Brown Sugar Bee</h2>
         </div>
         <div class = "desc-sec1">
 
             <p>Welcome to Brown Sugar Bee.
-               his site represents a combination of two of my
+               This site represents a combination of two of my
                favorite things: creating and archiving edibles….</p>
 
         </div>
-        <div class="button-sec1">
-              <a id="button" class="btn btn-outline-secondary btn-responsive showmore" href="eventdetails.html" role="button">Show More</a>
+        <div class="button-sec1 text-center">
+              <a id="button" class="btn btn-outline-secondary btn-responsive showmore" href="#recipe" role="button">Show More</a>
         </div>
      </div>
      <div class="col-lg-4 col-md-12 col-sm-12">
-       <div class="img-wrapper">
+       <div class="img-wrapper text-center">
          <!-- start of sec 1 left svg code -->
-         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         <svg class ="sec1_right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 141 238" style="enable-background:new 0 0 141 238;" xml:space="preserve">
          <style type="text/css">
           .st0{fill:none;stroke:#D3C4B3;stroke-width:0.5;stroke-miterlimit:10;}
@@ -234,16 +237,16 @@
   </div>
 
 
-   <!-- start of section 2-->
+   <!-- start of section 2 large-->
 
-    <div class="container-fluid sec2-container-background_1">
+    <div id="ingredients" class="container-fluid sec2-container-background_1">
         <div class="row">
             <div class="col-lg-1 col-md-12 col-sm-12">
                 <div class="img-wrapper">
                 </div>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12">
-            <div class="img-wrapper">
+            <div class="img-wrapper text-center">
                 <img class="sec2_svg_1" src="images/2ndSec_1.svg"  alt="illustration_left">
                 <h4 class="sec2_heading_1">Pistachios, Almonds, Walnuts...</h4>
                 <p class="sec2_desc_1">These are amazing dry fruits. It is loaded with lots of nutrients
@@ -254,7 +257,7 @@
                     <h2 class="sec2_heading">selecting the ingredients</h2>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12">
-                <div class="img-wrapper">
+                <div class="img-wrapper text-center">
                     <img class="sec2_image_1" src="images/pistachio_1_desktop.png" alt="image_left">
                     <img class="sec2_image_1_1" src="images/pistachio_2_desktop.png" alt="image_left">
                 </div>
@@ -330,15 +333,117 @@
         </div>
     </div>
 
-    <!-- end of section 2-->
-
-    <!-- start of section 3-->
+    <!-- end of section 2 large-->
 
 
-    <div class="container-fluid sec3-container-background">
+    <!-- start of section 2 for small and medium screen, some rearrangement -->
+
+    <div id="ingredients_sm" class="container-fluid sec2-container-background_1_small">
         <div class="row">
             <div class="col-lg-1 col-md-12 col-sm-12">
                 <div class="img-wrapper">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 sec2_heading_holder text-center">
+                <h2 class="sec2_heading">selecting the ingredients</h2>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="img-wrapper text-center">
+                    <img class="sec2_image_1_small" src="images/pistachio_1_desktop.png" alt="image_left">
+                    <img class="sec2_image_1_1_small" src="images/pistachio_2_desktop.png" alt="image_left">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="img-wrapper text-center">
+                    <img class="sec2_svg_1_small" src="images/2ndSec_1.svg"  alt="illustration_left">
+                    <h4 class="sec2_heading_1_small">Pistachios, Almonds, Walnuts...</h4>
+                    <p class="sec2_desc_1_small">These are amazing dry fruits. It is loaded with lots of nutrients
+                        required for the healthy growth and development of the body.... </p>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sec2-container-background_2_small">
+        <div class="row">
+            <div class="col-lg-1 col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="img-wrapper text-center">
+                    <img class="sec2_image_2_small" src="images/coconut_1_desktop.png"  alt="illustration_left">
+                    <img class="sec2_image_2_1_small" src="images/coconut_2_desktop.png" alt="image_left">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="img-wrapper text-center">
+                    <img class="sec2_svg_2_small" src="images/2ndSec_2.svg" alt="image_left">
+                    <h4 class="sec2_heading_2_small">Coconut Milk...</h4>
+                    <p class="sec2_desc_2_small">A Healthy Vegan Substitute to Dairy.Coconut milk has a very unique
+                        flavor and can add a vegan twist to any recipe you prepare.... </p>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid sec2-container-background_3_small">
+        <div class="row">
+            <div class="col-lg-1 col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="img-wrapper text-center">
+                    <img class="sec2_image_3_small" src="images/Blueberries_1_desktop.png" alt="image_left">
+                    <img class="sec2_image_3_1_small" src="images/Blueberries_2_desktop.png" alt="image_left">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="img-wrapper text-center">
+                    <img class="sec2_svg_3_small" src="images/2ndSec_3.svg"  alt="illustration_left">
+                    <h4 class="sec2_heading_3_small">Berries...</h4>
+                    <p class="sec2_desc_3_small">Berries tend to have a good nutritional profile.
+                        They are typically high in fiber, vitamin C and antioxidant polyphenols.... </p>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of section 2-->
+
+    <!-- start of section 3 for large -->
+
+    <div id = "about" class="container-fluid sec3-container-background">
+        <div class="row">
+            <div class="col-lg-1 col-md-12 col-sm-12">
+                <div class="img-wrapper meetHolder">
+                    <h3 class = "meet">Meet</h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12">
@@ -349,33 +454,282 @@
             </div>
             <div class="col-lg-2 col-md-12 col-sm-12">
                 <div class="img-wrapper">
+                    <img class="sec3_svg" src="images/Brown_sugar_bee_logo_sec3.svg" alt="image_right">
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <div class="img-wrapper">
-                    <img class="sec2_svg_2" src="images/Brown_sugar_bee_logo_sec3.svg" alt="image_right">
-                    <h4 class="sec2_heading_2">About Me...</h4>
-                    <p class="sec2_desc_2">My name is Janvi and I am an aspiring chef and food photographer based in West Los Angeles..... </p>
+                    <div class="sec3_heading_desc_holder">
+                        <h4 class="sec3_heading">About Me</h4>
+                        <p class="sec3_desc">My name is Janvi and I am an aspiring chef and food photographer based in West Los Angeles.
+                            Brown Sugar Bee contains recipes, my philosophy on food, restaurant reviews and food
+                            photography with meticulous attention to color, composition and ingredients...... </p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-1 col-md-12 col-sm-12">
-                <div class="img-wrapper">
+                <div class="img-wrapper janviHolder">
+                    <h3 class = "janvi">Janvi</h3>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- start of section 3-->
+    <!-- end of section 3 for large -->
+
+    <!-- start of section 3 for small and medium -->
+
+    <div id = "about_sm" class="container-fluid sec3-container-background_sm">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="img-wrapper text-center">
+                    <div class="sec3_heading_desc_holder_sm">
+                        <img class="sec3_svg_sm" src="images/Brown_sugar_bee_logo_sec3.svg" alt="image_right">
+                        <h4 class="sec3_heading_sm">About Me</h4>
+                        <p class="sec3_desc_sm">My name is Janvi and I am an aspiring chef and food photographer based in West Los Angeles.
+                            Brown Sugar Bee contains recipes, my philosophy on food, restaurant reviews and food
+                            photography with meticulous attention to color, composition and ingredients...... </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <div class="img-wrapper">
+                    <img class="sec3_image_1_sm" src="images/janu_1.png"  alt="image_left">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of section 3 for small and medium -->
+
+    <!-- start of section 4-->
+
+    <div id = "myStyle" class="container sec4-container-background sec4-container-background_sm">
+
+        <h2 class="sec4_heading">Culinary Destinations.</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 card1">
+                <div class="card image1_card" style="width: 18rem;">
+
+                       <img class="card-img-top image1" src="images/1.jpg" alt="Card image cap">
+
+                    <div class="card-body">
+                        <h5 class="card-title title1">Holiday Baking</h5>
+                        <p class="card-text">Holiday Cookies, Gingersnaps, Nut Crescents, Hermit Cookies, Chocolate Crinkle Cookies, Chocolate Thumbprint Cookies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 card2">
+                <div class="card" style="width: 18rem;">
+                    <div>
+                        <img class="card-img-top image2" src="images/2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title title2">Drinks</h5>
+                        <p class="card-text">Thandai, a beautifully spiced and chilled almond drink from India.  Perfect for a hot summer day...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 card3">
+                <div class="card image3_card" style="width: 18rem;">
+
+                       <img class="card-img-top image3" src="images/3.jpg" alt="Card image cap">
+
+                    <div class="card-body">
+                        <h5 class="card-title title3">Vegan Desserts</h5>
+                        <p class="card-text">They were a big hit and a great party dessert, my most favorite homemade cupcakes to date.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of section 4-->
+
+    <!-- start of section 5-->
+
+    <div id = "recipe" class="container sec5-container-background">
+        <h2 class="sec5_heading">My Cooking Style.</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <input id="sec5_img_btn" class="sec5_image_1" type="image" src="images/DSC_3716_desktop.jpg"  alt="image_left"/>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card-body sec5_card" style="width: 18rem;">
+                    <h3 id="sec5_heading_id" class="sec5_heading_1"></h3>
+                    <p class="sec5_para">Brown Sugar Bee contains recipes, my philosophy on food, restaurant reviews
+                        and food photography with meticulous attention to color, composition and ingredients. </p>
+                    <h4 id="sec5_heading_2_id" class="sec5_heading_2">
+                        <a href="https://brownsugarbee.blogspot.com/" target="_blank">To My Food Blog</a>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card sec5_image_3_holder" style="width: 18rem;">
+                    <img class="sec5_image_3" src="images/1_DSC8227_desktop.jpg"  alt="image_left">
+                    <div class="overlay_sec5">
+                        <div class="sec5_image_3_text">Lemon Blueberry Pancakes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+
+    <div id="myModal" class="modal_5_1">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>Vegan Coconut Cake with White Chocolate and Berries</h4>
+            <p>Yup, vegan white chocolate!  It was about time that I put some of that beautiful
+                cacao butter to use and it worked out wonderfully.  There is absolutely no need
+                for dairy in white chocolate because it dilutes the cacao butter flavor, and not
+                in a good way. Cacao butter is exquisite on it's own with a touch of sugar and vanilla bean. </p>
+        </div>
+
+    </div>
+
+    <!-- start of section 6-->
+
+    <div class="container sec6-container-background">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <input id="sec6_img_btn" class="sec6_image_1" type="image" src="images/IMG_1435_desktop.jpg"  alt="image_left"/>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card sec6_image_2_holder" style="width: 18.5rem;">
+                    <img class="sec6_image_2" src="images/1_DSC5577_desktop.jpg"  alt="image_left">
+                    <div class="overlay_sec6_2">
+                        <div class="sec6_image_2_text">The perfect cocktail for the 4th of July</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="sec6_image_3_holder">
+                    <img class="sec6_image_3" src="images/L10A4887_desktop.jpg"  alt="image_left">
+                <div class="overlay_sec6">
+                    <div class="sec6_image_3_text">Beet Pasta with Pine Nuts and Pistachio</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+
+    <div id="myModal2" class="modal_6_2">
+
+        <div class="modal-content_2">
+            <span class="close2">&times;</span>
+            <h4>Nothing better than a splash of fresh squeezed citrus juice</h4>
+            <p>Orange season is pretty delicious right now.  Some of my favorites are navel oranges,
+                cara cara oranges, fremont tangerines, satsuma mandarines, cocktail grapefruits,
+                and oro de blancos.  I always sample fruit from the farmers markets before purchase
+                but sometimes less desirable ones show up.  So what do to do?  Squeeze them!!
+                The juice will still taste 100 times better than any store bought processed orange juice.
+              </p>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+
+    <!-- end of section 6-->
+
+    <!-- Footer -->
+
+    <footer id = "contact" class="page-footer font-small mdb-color lighten-3 pt-4 footer-container-background">
 
 
-    <!-- footer -->
+        <div class="container">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+            <div class="row">
+
+                <div class="col-lg-1 col-md-12 col-sm-12">
+                    <div class="img-wrapper">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-12 col-sm-12">
+
+
+                    <div class="view overlay z-depth-1-half footer_image_holder_1">
+                        <img class="footer_image_1" src="images/Footer_1.svg" class="img-fluid" alt="">
+
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-9 col-sm-12">
+
+
+                    <div class="view overlay z-depth-1-half mail-holder">
+                       <h4 class="footer-heading">send me a message <span><a class="email" href="mailto:janubee@gmail.com"><img class="footer_image_mail" src="images/mail.svg" class="img-fluid" alt=""></a></span></h4>
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                        <div class="img-wrapper socialmedia-holder">
+                            <span><a class="insta" href="https://www.instagram.com/janviphoto/" target="_blank"><img class="footer_image_insta" src="images/insta.svg" class="img-fluid" alt=""></a></span><span><a class="fb" href="https://www.facebook.com/janviphoto/" target="_blank"><img class="footer_image_fb" src="images/facebook.svg" class="img-fluid" alt=""></a></span>
+                            <span><a href="#"><img class="footer_image_pinterest" src="images/pinterest.svg" class="img-fluid" alt=""></a></span>
+                        </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-sm-12">
+
+
+                    <div class="view overlay z-depth-1-half footer_image_holder_2">
+                        <img class="footer_image_2" src="images/Footer_2.svg" class="img-fluid" alt="">
+
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-1 col-md-12 col-sm-12">
+                    <div class="img-wrapper">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-copyright text-center py-3 copyright">© 2018 Copyright:
+            <span><a href="https://arundhatidesign.com/" target="_blank">ArundhatiDesign</a></span><span><a href="http://www.janviphoto.com/" target="_blank"> JanviPhotography</a></span>
+        </div>
+
+
+    </footer>
+    <!-- Footer -->
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.drawsvg.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.0.0.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/what-input.js"></script>
+
+    <!-- my jQuery and JavaScript code -->
     <script src="js/script_sec1.js"></script>
+    <script src="js/script_restofthesecs.js"></script>
+
   </body>
 </html>

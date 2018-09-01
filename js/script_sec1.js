@@ -4,7 +4,7 @@
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.opacity = "0.8";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
@@ -13,10 +13,54 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
+/* scroll to the section from nav */
+
+// Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+        // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            &&
+            location.hostname == this.hostname
+        ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000, function() {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                    } else {
+                        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
+                    };
+                });
+            }
+        }
+    });
+
+
 /* jquery-drawsvg pluggin for section one*/
 
-var $svg = $('svg').drawsvg();
-$svg.drawsvg('animate');
+$(document).ready(function() {
+
+    let $svg_sec1 = $('svg').drawsvg();
+    $svg_sec1.drawsvg('animate');
+
+});
 
 /* letter shuffling for the brown sugar bee heading at Section 1 */
 
@@ -25,8 +69,8 @@ $svg.drawsvg('animate');
   $.fn.shuffleLetters = function(prop){
 
       var options = $.extend({
-          "step"  : 8,    // How many times should the letters be changed
-          "fps"   : 10,   // Frames Per Second
+          "step"  : 10,    // How many times should the letters be changed
+          "fps"   : 5,   // Frames Per Second
           "text"  : ""    // Use this text instead of the contents
       },prop)
 
