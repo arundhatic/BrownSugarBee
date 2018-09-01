@@ -395,6 +395,11 @@
         padding-left: 30px;
     }
 
+    #sec5_heading_images{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #545470;
+    }
+
     .sec5_heading_1, .sec5_heading_2, .sec5_para {
         color: #7A4D6D;
         font-family: 'Source Sans Pro', sans-serif;
@@ -902,7 +907,12 @@
     .sec3_heading_sm {
         color: #D4C5B4;
         font-family: 'Source Sans Pro', sans-serif;
-
+        border: 1px solid #D4C5B4;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px ;
+        border-radius: 4px;
     }
 
     .sec3_desc_sm {
@@ -961,6 +971,12 @@
         background-color: #6393B4;
         padding-left: 30px;
         margin-bottom: 50px;
+    }
+
+    #sec5_heading_images{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #545470;
+        font-size: 20px;
     }
 
     .sec5_heading_1, .sec5_heading_2, .sec5_para {
@@ -1375,8 +1391,6 @@
         left: -40px
     }
 
-
-
     .sec2_svg_1_small, .sec2_svg_2_small, .sec2_svg_3_small {
         opacity: 0.5;
         width : 400px;
@@ -1492,6 +1506,12 @@
     .sec3_heading_sm {
         color: #D4C5B4;
         font-family: 'Source Sans Pro', sans-serif;
+        border: 1px solid #D4C5B4;
+        margin-left: 140px;
+        margin-right: 140px;
+        padding-top: 5px;
+        padding-bottom: 5px ;
+        border-radius: 4px;
 
     }
 
@@ -1554,6 +1574,12 @@
         background-color: #6393B4;
         padding-left: 30px;
         margin-bottom: 50px;
+    }
+
+    #sec5_heading_images{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #545470;
+        font-size: 20px;
     }
 
     .sec5_heading_1, .sec5_heading_2, .sec5_para {
@@ -2090,7 +2116,12 @@
     .sec3_heading_sm {
         color: #D4C5B4;
         font-family: 'Source Sans Pro', sans-serif;
-
+        border: 1px solid #D4C5B4;
+        margin-left: 260px;
+        margin-right: 260px;
+        padding-top: 5px;
+        padding-bottom: 5px ;
+        border-radius: 4px;
     }
 
     .sec3_desc_sm {
@@ -2152,6 +2183,12 @@
         background-color: #6393B4;
         padding-left: 30px;
         margin-bottom: 50px;
+    }
+
+    #sec5_heading_images{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #545470;
+        font-size: 25px;
     }
 
     .sec5_heading_1, .sec5_heading_2, .sec5_para {

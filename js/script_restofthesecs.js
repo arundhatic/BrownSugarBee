@@ -249,7 +249,7 @@ $(document).ready(function(){
 })
 
 
-/* text animation section 6 */
+/* text animation section 5 */
 $.fn.scrollView = function () {
     return this.each(function () {
         $('html, body').animate({
@@ -257,6 +257,25 @@ $.fn.scrollView = function () {
         }, 1000);
     });
 }
+
+var j = 0;
+var txt1 = "select images for more information.";
+var speed1 = 100;
+
+
+$(".sec5-container-background").hover(function typeWrite(){
+
+    $('sec5-container-background').scrollView();
+
+    if (j < txt1.length) {
+        (document).getElementById("sec5_heading_images").innerHTML += txt1.charAt(j);
+        j++;
+
+        setTimeout(typeWrite, speed1);
+
+    }
+
+});
 
 var i = 0;
 var txt = "Brown Sugar Bee";
