@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function(){
 
     /* section 2 animation for large screen */
