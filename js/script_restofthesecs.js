@@ -1,9 +1,7 @@
 
 $(document).ready(function(){
 
-    /* section 2 animation for large screen */
-
-    let imageHover1 = $(".sec2-container-background_1");
+    /* section 2 animation for large screen on scroll */
 
     let $imgPosition1 = $('.sec2_image_1_1'),
         $imgStartCoordinate1 = $('.sec2_image_1_1').offset(),
@@ -11,99 +9,133 @@ $(document).ready(function(){
 
     let $leftDist = $targetCoordinatesLeft1.left - $imgStartCoordinate1.left;
 
+    var YoudivOffst = $('.sec2_desc_2').offset().top;
 
-    $(imageHover1).hover(function (){
-
-        $imgPosition1.animate({
-                left: $leftDist},
-            2000);
+    $(window).scroll(function(){
+        var windScllTop = $(window).scrollTop();
+        if ( YoudivOffst  > windScllTop    ){
+            $imgPosition1.delay(3000).animate({
+                    left: $leftDist},
+                2000);
+        }else{
+            $imgPosition1.animate({
+                    left: 0},
+                0);
+        }
 
     });
 
 
-    let imageHover2 = $(".sec2-container-background_2");
     let $imgPosition2 = $('.sec2_image_2_1'),
         $imgStartCoordinate2 = $('.sec2_image_2_1').offset(),
         $targetCoordinatesLeft2 = $('.sec2_desc_2').offset();
 
 
-    $(imageHover2).hover(function (){
+    var YoudivOffst1 = $('.sec2_desc_3').offset().top;
 
-        $imgPosition2.animate({
-                left: $targetCoordinatesLeft2.left - $imgStartCoordinate2.left - 200},
-            2000);
-
+    $(window).scroll(function(){
+        var windScllTop = $(window).scrollTop();
+        if ( YoudivOffst1  > windScllTop    ){
+            $imgPosition2.delay(4000).animate({
+                    left: $targetCoordinatesLeft2.left - $imgStartCoordinate2.left - 200},
+                2000);
+        }else{
+            $imgPosition2.animate({
+                    left: 0},
+                0);
+        }
 
     });
 
 
-    let imageHover3 = $(".sec2-container-background_3");
-
-    let $imgPosition = $('.sec2_image_3_1'),
+    let $imgPosition3 = $('.sec2_image_3_1'),
         $imgStartCoordinate = $('.sec2_image_3').offset(),
         $targetCoordinatesLeft = $('.sec2_heading').offset(),
         $targetCoordinatesTop = $('.sec2_desc_3').offset();
 
+    var YoudivOffst2 = $('.sec3-container-background').offset().top;
 
-    $(imageHover3).hover(function (){
-
-        $imgPosition.animate({
-                'left': $targetCoordinatesLeft.left - $imgStartCoordinate.left,
-                'top': $targetCoordinatesTop.top - $imgStartCoordinate.top},
-            2000);
-
+    $(window).scroll(function(){
+        var windScllTop = $(window).scrollTop();
+        if ( YoudivOffst2  > windScllTop    ){
+            $imgPosition3.delay(6000).animate({
+                    'left': $targetCoordinatesLeft.left - $imgStartCoordinate.left,
+                    'top': $targetCoordinatesTop.top - $imgStartCoordinate.top},
+                2000);
+        }else{
+            $imgPosition3.animate({
+                    left: 0},
+                0);
+        }
 
     });
 
 
-    /* section 2 animation for small screen */
-
-    let imageHover1_sm = $(".sec2-container-background_1_small");
+    /* section 2 animation for small and medium screen */
 
     let $imgPosition1_sm = $('.sec2_image_1_1_small'),
         $imgStartCoordinate1_sm = $('.sec2_image_1_1_small').position(),
         $targetCoordinatesTop1_sm = $('.sec2_desc_1_small').position();
 
+    var YoudivOffst_sm = $('.sec2_desc_1_small').offset().top;
 
-    $(imageHover1_sm).hover(function (){
+    $(window).scroll(function(){
+        var windScllTop = $(window).scrollTop();
+        if ( YoudivOffst_sm  > windScllTop    ){
+            $imgPosition1_sm.delay(3000).animate({
+                    'top': $targetCoordinatesTop1_sm.top - $imgStartCoordinate1_sm.top + 100},
+                3000);
+        }else {
+            $imgPosition1_sm.animate({
+                    top: 0
+                },
+                0);
+             }
+        });
 
-        $imgPosition1_sm.animate({
-                'top': $targetCoordinatesTop1_sm.top - $imgStartCoordinate1_sm.top + 100},
-            2000);
 
-    });
-
-
-    let imageHover2_sm = $(".sec2-container-background_2_small");
     let $imgPosition2_sm = $('.sec2_image_2_1_small'),
         $imgStartCoordinate2_sm = $('.sec2_image_2_1_small').position(),
         $targetCoordinatesLeft2_sm = $('.sec2_desc_2_small').position();
 
 
-    $(imageHover2_sm).hover(function (){
+    var YoudivOffst1_sm = $('.sec2_desc_2_small').offset().top;
 
-        $imgPosition2_sm.animate({
-                top: $targetCoordinatesLeft2_sm.top - $imgStartCoordinate2_sm.top + 100},
-            2000);
-
-
+    $(window).scroll(function(){
+        var windScllTop = $(window).scrollTop();
+        if ( YoudivOffst1_sm  > windScllTop    ){
+            $imgPosition2_sm.delay(5000).animate({
+                    top: $targetCoordinatesLeft2_sm.top - $imgStartCoordinate2_sm.top + 100},
+                3000);
+        }else {
+            $imgPosition2_sm.animate({
+                    top: 0
+                },
+                0);
+        }
     });
 
 
-    let imageHover3_sm = $(".sec2-container-background_3_small");
 
-    let $imgPosition_sm = $('.sec2_image_3_1_small'),
+    let $imgPosition3_sm = $('.sec2_image_3_1_small'),
         $imgStartCoordinate_sm = $('.sec2_image_3_small').position(),
         $targetCoordinatesTop_sm = $('.sec2_desc_3_small').position();
 
 
-    $(imageHover3_sm).hover(function (){
+    var YoudivOffst2_sm = $('.sec2_desc_3_small').offset().top;
 
-        $imgPosition_sm.animate({
-                'top': $targetCoordinatesTop_sm.top - $imgStartCoordinate_sm.top},
-            2000);
-
-
+    $(window).scroll(function(){
+        var windScllTop = $(window).scrollTop();
+        if ( YoudivOffst2_sm  > windScllTop    ){
+            $imgPosition3_sm.delay(8000).animate({
+                    'top': $targetCoordinatesTop_sm.top - $imgStartCoordinate_sm.top},
+                3000);
+        }else {
+            $imgPosition3_sm.animate({
+                    top: 0
+                },
+                0);
+        }
     });
 
 
@@ -244,7 +276,7 @@ $(document).ready(function(){
     });
 
 
-})
+});
 
 
 /* text animation section 5 */
@@ -348,17 +380,21 @@ image_button2.onclick = function() {
        modal_counter--;
    }
     modal2.style.display = "block";
+    ++modal_counter;
+
 }
 
 // When the user clicks on <span> (x), close the modal
 span2.onclick = function() {
     modal2.style.display = "none";
+    modal_counter--;
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal2) {
         modal2.style.display = "none";
+        modal_counter--;
     }
 }
 
