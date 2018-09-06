@@ -141,7 +141,6 @@ $(document).ready(function(){
 
     /* section 3 animation for large */
 
-
     let imageHover4 = $(".sec3-container-background");
 
     $(imageHover4).hover(function (){
@@ -419,4 +418,3 @@ $(imageHoverFooter1).hover(function (){
         }, 2500);
 
 });
-

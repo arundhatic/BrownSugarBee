@@ -41,7 +41,6 @@
         margin-left: 50px;
     }
 
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     #main {
         transition: margin-left .5s;
         padding: 20px;
@@ -50,7 +49,6 @@
     /* 1st section */
     .container-background {
         background-color: #663044;
-        /*width:100%;*/
         outline: 2px solid #D4C5B4;
         outline-offset: -15px;
     }
@@ -61,7 +59,7 @@
 
     .topic-sec1 {
         position: relative;
-        top: -70px; /* This will move it 70px up */
+        top: -70px;
         right: 45px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
@@ -71,8 +69,8 @@
 
     .desc-sec1 {
         position: relative;
-        top: -40px; /* This will move it 40px up */
-        left: 10px; /* This will move it 10px to the right */
+        top: -40px;
+        left: 10px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
@@ -107,7 +105,6 @@
     /* 2nd section */
     .sec2-container-background_1, .sec2-container-background_2, .sec2-container-background_3 {
         background-color: #f8efd1;
-        /* width:100%;*/
     }
 
     .sec2_svg_1, .sec2_svg_2, .sec2_svg_3 {
@@ -328,7 +325,7 @@
 
     .sec4_heading, .sec5_heading {
         position: relative;
-        left: -650px;
+        left: -950px;
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
         font-size: 55px;
@@ -363,12 +360,12 @@
 
     .image1_card{
         position:absolute;
-        left: -500px;
+        left: -800px;
     }
 
     .image3_card{
         position:absolute;
-        right: -500px;
+        right: -800px;
     }
 
     /* section 5 */
@@ -636,12 +633,12 @@
 
     .footer_image_1 {
         position: absolute;
-        left: -450px;
+        left: -850px;
     }
 
     .footer_image_2 {
         position: absolute;
-        right: -400px;
+        right: -800px;
     }
 
     .footer_image_fb, .footer_image_pinterest, .footer_image_insta {
@@ -714,7 +711,6 @@
         margin-left: 50px;
     }
 
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     #main {
         transition: margin-left .5s;
         padding: 20px;
@@ -739,7 +735,7 @@
 
     .topic-sec1 {
         position: relative;
-        top: -70px; /* This will move it 70px up */
+        top: -70px;
         font-size: 25px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
@@ -751,8 +747,8 @@
     .desc-sec1 {
         display:none;
         position: relative;
-        top: -40px; /* This will move it 40px up */
-        left: 10px; /* This will move it 10px to the right */
+        top: -40px;
+        left: 10px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
@@ -1300,7 +1296,6 @@
         margin-left: 50px;
     }
 
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     #main {
         transition: margin-left .5s;
         padding: 20px;
@@ -1325,7 +1320,7 @@
 
     .topic-sec1 {
         position: relative;
-        top: -70px; /* This will move it 70px up */
+        top: -70px;
         font-size: 35px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
@@ -1337,8 +1332,8 @@
     .desc-sec1 {
         display:none;
         position: relative;
-        top: -40px; /* This will move it 40px up */
-        left: 10px; /* This will move it 10px to the right */
+        top: -40px;
+        left: 10px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
@@ -1908,7 +1903,6 @@
         margin-left: 50px;
     }
 
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     #main {
         transition: margin-left .5s;
         padding: 20px;
@@ -1933,7 +1927,7 @@
 
     .topic-sec1 {
         position: relative;
-        top: -70px; /* This will move it 70px up */
+        top: -70px;
         font-size: 35px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
@@ -1945,8 +1939,8 @@
     .desc-sec1 {
         display:none;
         position: relative;
-        top: -40px; /* This will move it 40px up */
-        left: 10px; /* This will move it 10px to the right */
+        top: -40px;
+        left: 10px;
         color: #239EB3;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;

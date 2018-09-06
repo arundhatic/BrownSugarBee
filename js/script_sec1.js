@@ -1,7 +1,6 @@
 
 /* navigation and section 1 */
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("mySidenav").style.opacity = "0.8";
@@ -82,7 +81,7 @@ else
 
 
 
-/* jquery-drawsvg pluggin for section one*/
+/* jquery-drawsvg pluggin for section one */
 
 $(document).ready(function() {
 
@@ -149,12 +148,9 @@ $(document).ready(function() {
 
           (function shuffle(start){
 
-              // This code is run options.fps times per second
-              // and updates the contents of the page element
-
               var i,
                   len = letters.length,
-                  strCopy = str.slice(0); // Fresh copy of the string
+                  strCopy = str.slice(0);
 
               if(start>len){
                   return;
@@ -163,8 +159,6 @@ $(document).ready(function() {
               // All the work gets done here
               for(i=Math.max(start,0); i < len; i++){
 
-                  // The start argument and options.step limit
-                  // the characters we will be working on at once
 
                   if( i < start+options.step){
                       // Generate a random character at this position
