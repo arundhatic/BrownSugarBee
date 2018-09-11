@@ -206,7 +206,7 @@ $(document).ready(function(){
     /* section 4 small amd medium */
 
     bsContainerWidth = $("body").find('.container').width()
-    if (bsContainerWidth <= 991.98)
+    if (bsContainerWidth < 991.98)
     {
         var YoudivOffst_sec4 = $('.image1_card').offset().top;
 
@@ -243,15 +243,12 @@ $(document).ready(function(){
                 });
 
             }else{
-                $headingPosition.animate({
-                        left: 0},
-                    0);
+
             }
 
         });
 
     }
-
 
     let headingHover5 = $(".sec4-container-background");
 
@@ -288,6 +285,7 @@ $(document).ready(function(){
     });
 
 
+
     $(headingHover5).hover(function (){
 
         if (window.matchMedia('(min-width: 992px)').matches){
@@ -310,7 +308,7 @@ $(document).ready(function(){
 
 
     bsContainerWidth = $("body").find('.container').width()
-    if (bsContainerWidth <= 991.98)
+    if (bsContainerWidth < 991.98)
     {
         let YoudivOffst_sec5 = $('.image1_card').offset().top;
 
@@ -326,44 +324,6 @@ $(document).ready(function(){
                     left: '0px'
                 },3000);
 
-                /* text animation section 5 */
-                $.fn.scrollView = function () {
-                    return this.each(function () {
-                        $('html, body').animate({
-                            scrollTop: $(this).offset().top
-                        }, 1000);
-                    });
-                }
-
-                let j = 0;
-                let txt1 = "select images for more information.";
-                let speed1 = 100;
-
-                $('sec5-container-background').scrollView();
-
-                if (j <= txt1.length) {
-                    (document).getElementById("sec5_heading_images").innerHTML += txt1.charAt(j);
-                    ++j;
-
-                    setTimeout(typeWrite, speed1);
-
-                }
-
-                let i = 0;
-                let txt = "Brown Sugar Bee";
-                let speed_sm = 700;
-
-                $('sec5_card').scrollView();
-
-                if (i < txt.length) {
-                    (document).getElementById("sec5_heading_id").innerHTML += txt.charAt(i);
-                    ++i;
-
-                    setTimeout(typeWrite, speed_sm);
-
-
-                }
-
             }else{
 
             }
@@ -374,75 +334,78 @@ $(document).ready(function(){
 
 
 
-    let headingHover = $(".sec5-container-background");
+        let headingHover = $(".sec5-container-background");
 
-    $(headingHover).hover(function (){
+        $(headingHover).hover(function (){
 
-        let $headingPosition = $('.sec5_heading');
+            let $headingPosition = $('.sec5_heading');
 
-        $headingPosition.animate({
-            position: "relative",
-            top: '5px',
-            left: '0px'
-        },3000);
+            $headingPosition.animate({
+                position: "relative",
+                top: '5px',
+                left: '0px'
+            },3000);
 
-    });
-
-
-});
+        });
 
 
-/* text animation section 5 */
-$.fn.scrollView = function () {
-    return this.each(function () {
-        $('html, body').animate({
-            scrollTop: $(this).offset().top
-        }, 1000);
-    });
-}
 
-var j = 0;
-var txt1 = "select images for more information.";
-var speed1 = 100;
-
-
-$(".sec5-container-background").hover(function typeWrite(){
-
-    $('sec5-container-background').scrollView();
-
-    if (j < txt1.length) {
-        (document).getElementById("sec5_heading_images").innerHTML += txt1.charAt(j);
-        j++;
-
-        setTimeout(typeWrite, speed1);
-
-    }
-
-});
-
-var i = 0;
-var txt = "Brown Sugar Bee";
-var speed = 500;
-var speed_sm = 700;
-
-$(".sec5-container-background").hover(function typeWrite(){
-
-    $('sec5_card').scrollView();
-
-    if (i < txt.length) {
-        (document).getElementById("sec5_heading_id").innerHTML += txt.charAt(i);
-        i++;
-
-        if (window.matchMedia('(max-width: 767px)').matches){
-            setTimeout(typeWrite, speed_sm);
-        }
-        else{
-            setTimeout(typeWrite, speed);
+        /* text animation section 5 */
+        $.fn.scrollView = function () {
+            return this.each(function () {
+                $('html, body').animate({
+                    scrollTop: $(this).offset().top
+                }, 1000);
+            });
         }
 
-    }
+        var j = 0;
+        var txt1 = "select images for more information.";
+        var speed1 = 100;
+
+
+        $(".sec5-container-background").hover(function typeWrite(){
+
+            $('sec5-container-background').scrollView();
+
+            if (j < txt1.length) {
+                (document).getElementById("sec5_heading_images").innerHTML += txt1.charAt(j);
+                j++;
+
+                setTimeout(typeWrite, speed1);
+
+            }
+
+        });
+
+        var i = 0;
+        var txt = "Brown Sugar Bee";
+        var speed = 500;
+        var speed_sm = 700;
+
+        $(".sec5-container-background").hover(function typeWrite(){
+
+            $('sec5_card').scrollView();
+
+            if (i < txt.length) {
+                (document).getElementById("sec5_heading_id").innerHTML += txt.charAt(i);
+                i++;
+
+                if (window.matchMedia('(max-width: 767px)').matches){
+                    setTimeout(typeWrite, speed_sm);
+                }
+                else{
+                    setTimeout(typeWrite, speed);
+                }
+
+            }
+
+        });
+
+
 
 });
+
 
 
 // Get the 1st modal
